@@ -15,8 +15,8 @@ function setup() {
 function draw() {
   background(255,255,255); 
   thresholdX = car.width/2 + wall.width/2;
-  thresholdY = car.height/2 + wall.height/2;
-  if(((wall.x - car.x) <= thresholdX) && ((car.y - wall.y) <= thresholdY) && ((wall.y - car.y)<= thresholdY)){
+ 
+  if(((wall.x - car.x) <= thresholdX) ){
     car.velocityX = 0;
     deformation = (0.5 * weight * speed * speed)/22500;
     if(deformation >= 180){
